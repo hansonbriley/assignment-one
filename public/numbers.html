@@ -4,16 +4,62 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        .black {
+            background-color: black;
+            color: white;
+        }
+        .green {
+            background-color: darkgreen;
+            color: black;
+        }
+
+        p.solid {
+            border-style: solid;
+        }
+        div.solid {
+            width: 619px;
+            padding: 50px;
+            border: 25px solid yellowgreen;
+            margin: 0;
+        }
+        div.text {
+            font: 24px Calibri;
+            right: 100px;
+        }
         table, th, td {
             border: black 1px solid;
+            table-layout: fixed;
+            width: 150px;
         }
+        #grid-container {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: auto auto;
+        }
+        #grid-container-two {
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
+        }
+        .leftSide {
+            background: #FFF2CC;
+        }
+        .rightSide {
+            background: #FFF2CC;
+        }
+        .middle {
+            background: tan;
+        }
+
+
+
     </style>
 </head>
 <body>
-<h3>Welcome to my Page of Numbers</h3>
+<p><a href="main.html">Back to Main</a></p>
+<h3 style="position: relative; left: 570px">Welcome to my Page of Numbers</h3>
 
-<table>
-    <thead>
+<table cellspacing="0" align="center">
+    <thead class="black">
         <th>n</th>
         <th>n2</th>
         <th>n3</th>
@@ -90,6 +136,65 @@
         <td>3628800</td>
         <td>1024</td>
     </tr>
-</table>
+    <thead class="green" aria-rowspan="20">
+        <th>Lineal</th>
+        <th>Quadratic</th>
+        <th>Cube</th>
+        <th>Factorial</th>
+        <th>Exponential</th>
+    </thead>
+</table><br><br>
+
+<div class="solid" style="position: relative; left: 560px">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+    deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+    id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><br>
+
+<div id="grid-container">
+    <div class="text" style="position: relative; top: 120px; left: -100px">Linear</div>
+    <div><img src="images/linear.PNG"></div>
+    <div class="text" style="position: relative; top: 120px; left: -100px">Quadratic</div>
+    <div><img src="images/quad.PNG"></div>
+    <div class="text" style="position: relative; top: 120px; left: -100px">Cubic</div>
+    <div><img src="images/cubic.PNG"></div>
+    <div class="text" style="position: relative; top: 120px; left: -100px">Factorial</div>
+    <div><img src="images/factorial.PNG"></div>
+    <div class="text" style="position: relative; top: 120px; left: -100px">Exponential</div>
+    <div><img src="images/exponential.PNG"></div>
+</div>
+
+<div id="grid-container-two">
+    <div class="leftSide text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div class="middle text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+        totam remaperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+        modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+        ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
+        voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Sed ut
+        perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam remaperiam, eaque ipsa quae ab
+        illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+        est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+        et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+        nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+        consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</div>
+    <div class="rightSide text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</div>
+
 </body>
 </html>
